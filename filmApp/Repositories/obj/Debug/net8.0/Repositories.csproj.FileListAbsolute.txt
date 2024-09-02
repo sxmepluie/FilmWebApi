@@ -1,0 +1,15 @@
+C:\Users\Murat Öztürk\source\repos\filmApp\Repositories\bin\Debug\net8.0\Repositories.deps.json
+C:\Users\Murat Öztürk\source\repos\filmApp\Repositories\bin\Debug\net8.0\Repositories.dll
+C:\Users\Murat Öztürk\source\repos\filmApp\Repositories\bin\Debug\net8.0\Repositories.pdb
+C:\Users\Murat Öztürk\source\repos\filmApp\Repositories\bin\Debug\net8.0\Entities.dll
+C:\Users\Murat Öztürk\source\repos\filmApp\Repositories\bin\Debug\net8.0\Entities.pdb
+C:\Users\Murat Öztürk\source\repos\filmApp\Repositories\obj\Debug\net8.0\Repositories.csproj.AssemblyReference.cache
+C:\Users\Murat Öztürk\source\repos\filmApp\Repositories\obj\Debug\net8.0\Repositories.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Murat Öztürk\source\repos\filmApp\Repositories\obj\Debug\net8.0\Repositories.AssemblyInfoInputs.cache
+C:\Users\Murat Öztürk\source\repos\filmApp\Repositories\obj\Debug\net8.0\Repositories.AssemblyInfo.cs
+C:\Users\Murat Öztürk\source\repos\filmApp\Repositories\obj\Debug\net8.0\Repositories.csproj.CoreCompileInputs.cache
+C:\Users\Murat Öztürk\source\repos\filmApp\Repositories\obj\Debug\net8.0\Reposito.787EC4B2.Up2Date
+C:\Users\Murat Öztürk\source\repos\filmApp\Repositories\obj\Debug\net8.0\Repositories.dll
+C:\Users\Murat Öztürk\source\repos\filmApp\Repositories\obj\Debug\net8.0\refint\Repositories.dll
+C:\Users\Murat Öztürk\source\repos\filmApp\Repositories\obj\Debug\net8.0\Repositories.pdb
+C:\Users\Murat Öztürk\source\repos\filmApp\Repositories\obj\Debug\net8.0\ref\Repositories.dll

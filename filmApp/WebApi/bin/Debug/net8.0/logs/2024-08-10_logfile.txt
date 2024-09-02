@@ -1,0 +1,62 @@
+2024-08-10 15:47:35.3731 INFO {"ModelName":"OnActionExecuting","Controller":"Films","Action":"GetAllFilms","Id":null,"CreateAt":"2024-08-10T12:47:35.3535981Z"}
+2024-08-10 15:47:42.0507 INFO {"ModelName":"OnActionExecuting","Controller":"Films","Action":"GetFilmById","Id":"1","CreateAt":"2024-08-10T12:47:42.0504831Z"}
+2024-08-10 15:47:45.8735 INFO {"ModelName":"OnActionExecuting","Controller":"Films","Action":"DeleteOneFilm","Id":"22","CreateAt":"2024-08-10T12:47:45.8734339Z"}
+2024-08-10 15:47:45.9023 INFO  Film with id: {id} could not found.
+2024-08-10 15:47:53.2464 INFO {"ModelName":"OnActionExecuting","Controller":"Films","Action":"GetFilmById","Id":"25","CreateAt":"2024-08-10T12:47:53.2464285Z"}
+2024-08-10 15:47:59.2570 INFO {"ModelName":"OnActionExecuting","Controller":"Films","Action":"DeleteOneFilm","Id":"25","CreateAt":"2024-08-10T12:47:59.2570013Z"}
+2024-08-10 15:48:03.0578 INFO {"ModelName":"OnActionExecuting","Controller":"Films","Action":"GetFilmById","Id":"25","CreateAt":"2024-08-10T12:48:03.0577797Z"}
+2024-08-10 15:48:10.8154 INFO {"ModelName":"OnActionExecuting","Controller":"Films","Action":"CreateOneFilm","Id":null,"CreateAt":"2024-08-10T12:48:10.8154139Z"}
+2024-08-10 16:02:34.1875 INFO {"ModelName":"OnActionExecuting","Controller":"Films","Action":"GetAllFilms","Id":null,"CreateAt":"2024-08-10T13:02:34.1707087Z"}
+2024-08-10 16:02:42.2234 INFO {"ModelName":"OnActionExecuting","Controller":"Films","Action":"GetFilmById","Id":"25","CreateAt":"2024-08-10T13:02:42.2229521Z"}
+2024-08-10 16:02:42.5421 INFO  Film with id: {id} could not found.
+2024-08-10 16:02:46.4041 INFO {"ModelName":"OnActionExecuting","Controller":"Films","Action":"GetFilmById","Id":"26","CreateAt":"2024-08-10T13:02:46.4040434Z"}
+2024-08-10 16:02:51.5111 INFO {"ModelName":"OnActionExecuting","Controller":"Films","Action":"DeleteOneFilm","Id":"26","CreateAt":"2024-08-10T13:02:51.511022Z"}
+2024-08-10 16:02:54.7065 INFO {"ModelName":"OnActionExecuting","Controller":"Films","Action":"GetFilmById","Id":"26","CreateAt":"2024-08-10T13:02:54.7064589Z"}
+2024-08-10 16:02:54.7065 INFO  Film with id: {id} could not found.
+2024-08-10 16:02:58.3686 INFO {"ModelName":"OnActionExecuting","Controller":"Films","Action":"CreateOneFilm","Id":null,"CreateAt":"2024-08-10T13:02:58.3684317Z"}
+2024-08-10 16:03:07.3699 INFO {"ModelName":"OnActionExecuting","Controller":"Films","Action":"GetFilmById","Id":"27","CreateAt":"2024-08-10T13:03:07.3698784Z"}
+2024-08-10 16:03:14.5914 INFO {"ModelName":"OnActionExecuting","Controller":"Films","Action":"PartiallyUpdateOneFilm","Id":"27","CreateAt":"2024-08-10T13:03:14.5913815Z"}
+2024-08-10 16:03:21.9132 INFO {"ModelName":"OnActionExecuting","Controller":"Films","Action":"PartiallyUpdateOneFilm","Id":"27","CreateAt":"2024-08-10T13:03:21.913191Z"}
+2024-08-10 16:03:27.0458 INFO {"ModelName":"OnActionExecuting","Controller":"Films","Action":"GetFilmById","Id":"27","CreateAt":"2024-08-10T13:03:27.0457938Z"}
+2024-08-10 16:03:33.3557 INFO {"ModelName":"OnActionExecuting","Controller":"Films","Action":"UpdateOneFilm","Id":"27","CreateAt":"2024-08-10T13:03:33.3557014Z"}
+2024-08-10 16:03:38.0000 INFO {"ModelName":"OnActionExecuting","Controller":"Films","Action":"GetFilmById","Id":"27","CreateAt":"2024-08-10T13:03:37.9999906Z"}
+2024-08-10 16:03:45.5003 INFO {"ModelName":"OnActionExecuting","Controller":"Films","Action":"UpdateOneFilm","Id":"27","CreateAt":"2024-08-10T13:03:45.5002514Z"}
+2024-08-10 16:03:47.8358 INFO {"ModelName":"OnActionExecuting","Controller":"Films","Action":"GetFilmById","Id":"27","CreateAt":"2024-08-10T13:03:47.835768Z"}
+2024-08-10 21:02:25.8808 INFO {"ModelName":"OnActionExecuting","Controller":"Films","Action":"GetAllFilms","Id":null,"CreateAt":"2024-08-10T18:02:25.8695765Z"}
+2024-08-10 21:02:39.6346 INFO {"ModelName":"OnActionExecuting","Controller":"Films","Action":"GetFilmById","Id":"28","CreateAt":"2024-08-10T18:02:39.6343468Z"}
+2024-08-10 21:02:45.2227 INFO {"ModelName":"OnActionExecuting","Controller":"Films","Action":"DeleteOneFilm","Id":"28","CreateAt":"2024-08-10T18:02:45.2226312Z"}
+2024-08-10 21:02:48.7162 INFO {"ModelName":"OnActionExecuting","Controller":"Films","Action":"GetFilmById","Id":"28","CreateAt":"2024-08-10T18:02:48.7162047Z"}
+2024-08-10 21:02:48.7254 INFO  Film with id: {id} could not found.
+2024-08-10 21:02:55.1336 INFO {"ModelName":"OnActionExecuting","Controller":"Films","Action":"CreateOneFilm","Id":null,"CreateAt":"2024-08-10T18:02:55.1336307Z"}
+2024-08-10 21:03:04.5846 INFO {"ModelName":"OnActionExecuting","Controller":"Films","Action":"GetFilmById","Id":"29","CreateAt":"2024-08-10T18:03:04.5845286Z"}
+2024-08-10 21:03:09.5258 INFO {"ModelName":"OnActionExecuting","Controller":"Films","Action":"PartiallyUpdateOneFilm","Id":"29","CreateAt":"2024-08-10T18:03:09.5257993Z"}
+2024-08-10 21:03:12.4967 INFO {"ModelName":"OnActionExecuting","Controller":"Films","Action":"GetFilmById","Id":"29","CreateAt":"2024-08-10T18:03:12.4966779Z"}
+2024-08-10 21:03:18.5763 INFO {"ModelName":"OnActionExecuting","Controller":"Films","Action":"UpdateOneFilm","Id":"29","CreateAt":"2024-08-10T18:03:18.5762953Z"}
+2024-08-10 21:03:23.5534 INFO {"ModelName":"OnActionExecuting","Controller":"Films","Action":"UpdateOneFilm","Id":"29","CreateAt":"2024-08-10T18:03:23.553397Z"}
+2024-08-10 21:03:26.3113 INFO {"ModelName":"OnActionExecuting","Controller":"Films","Action":"GetFilmById","Id":"29","CreateAt":"2024-08-10T18:03:26.3113328Z"}
+2024-08-10 22:13:57.9386 INFO {"ModelName":"OnActionExecuting","Controller":"Films","Action":"GetAllFilms","Id":null,"CreateAt":"2024-08-10T19:13:57.9224321Z"}
+2024-08-10 22:14:06.2907 INFO {"ModelName":"OnActionExecuting","Controller":"Films","Action":"GetFilmById","Id":"30","CreateAt":"2024-08-10T19:14:06.2905029Z"}
+2024-08-10 22:14:14.1850 INFO {"ModelName":"OnActionExecuting","Controller":"Films","Action":"DeleteOneFilm","Id":"30","CreateAt":"2024-08-10T19:14:14.1850028Z"}
+2024-08-10 22:14:19.0093 INFO {"ModelName":"OnActionExecuting","Controller":"Films","Action":"GetFilmById","Id":"30","CreateAt":"2024-08-10T19:14:19.0092508Z"}
+2024-08-10 22:14:19.2115 ERROR Something went wrong: Entities.Exceptions.FilmNotFoundException: The Film with id : 30 could not found.
+   at Services.FilmManager.GetFilmByIdAndCheckExists(Int32 id, Boolean trackChanges) in C:\Users\Murat Öztürk\source\repos\filmApp\Services\FilmManager.cs:line 83
+   at Services.FilmManager.GetFilmByIdAsync(Int32 id, Boolean trackChanges) in C:\Users\Murat Öztürk\source\repos\filmApp\Services\FilmManager.cs:line 51
+   at WebApi.Controllers.FilmsController.GetFilmByIdAsync(Int32 id) in C:\Users\Murat Öztürk\source\repos\filmApp\WebApi\Controllers\FilmsController.cs:line 37
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2024-08-10 22:14:23.9057 INFO {"ModelName":"OnActionExecuting","Controller":"Films","Action":"CreateOneFilm","Id":null,"CreateAt":"2024-08-10T19:14:23.9056915Z"}
+2024-08-10 22:14:30.4160 INFO {"ModelName":"OnActionExecuting","Controller":"Films","Action":"PartiallyUpdateOneFilm","Id":"31","CreateAt":"2024-08-10T19:14:30.4160262Z"}
+2024-08-10 22:14:33.3588 INFO {"ModelName":"OnActionExecuting","Controller":"Films","Action":"GetFilmById","Id":"31","CreateAt":"2024-08-10T19:14:33.3587748Z"}
+2024-08-10 22:14:43.0911 INFO {"ModelName":"OnActionExecuting","Controller":"Films","Action":"UpdateOneFilm","Id":"31","CreateAt":"2024-08-10T19:14:43.0910174Z"}
+2024-08-10 22:14:48.8749 INFO {"ModelName":"OnActionExecuting","Controller":"Films","Action":"GetFilmById","Id":"31","CreateAt":"2024-08-10T19:14:48.8748295Z"}

@@ -1,0 +1,323 @@
+2024-08-11 08:19:39.3542 INFO {"ModelName":"OnActionExecuting","Controller":"Films","Action":"GetAllFilms","Id":null,"CreateAt":"2024-08-11T05:19:39.3441571Z"}
+2024-08-11 09:34:43.8162 INFO {"ModelName":"OnActionExecuting","Controller":"Films","Action":"GetAllFilms","Id":null,"CreateAt":"2024-08-11T06:34:43.7985895Z"}
+2024-08-11 09:35:06.9715 INFO {"ModelName":"OnActionExecuting","Controller":"Films","Action":"GetAllFilms","Id":null,"CreateAt":"2024-08-11T06:35:06.9713458Z"}
+2024-08-11 09:47:31.9838 INFO {"ModelName":"OnActionExecuting","Controller":"Films","Action":"GetAllFilms","Id":null,"CreateAt":"2024-08-11T06:47:31.9719399Z"}
+2024-08-11 12:42:43.9895 INFO {"ModelName":"OnActionExecuting","Controller":"Films","Action":"CreateOneFilm","Id":null,"CreateAt":"2024-08-11T09:42:43.9778831Z"}
+2024-08-11 12:44:24.6194 INFO {"ModelName":"OnActionExecuting","Controller":"Films","Action":"GetAllFilms","Id":null,"CreateAt":"2024-08-11T09:44:24.6030279Z"}
+2024-08-11 12:44:29.0383 ERROR Something went wrong: Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid column name 'FilmId'.
+Invalid column name 'Description'.
+Invalid column name 'DirectorId'.
+Invalid column name 'DirectorName'.
+Invalid column name 'Rate'.
+Invalid column name 'Time'.
+Invalid column name 'Title'.
+Invalid column name 'Year'.
+Invalid column name 'FilmId'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__211_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Repositories.EFCore.FilmRepository.GetAllFilmsAsync(FilmParameters filmParameters, Boolean trackChanges) in C:\Users\Murat Öztürk\source\repos\filmApp\Repositories\EFCore\FilmRepository.cs:line 24
+   at Services.FilmManager.GetAllFilmsAsync(FilmParameters filmParameters, Boolean trackChanges) in C:\Users\Murat Öztürk\source\repos\filmApp\Services\FilmManager.cs:line 46
+   at WebApi.Controllers.FilmsController.GetAllFilmsAsync(FilmParameters filmParameters) in C:\Users\Murat Öztürk\source\repos\filmApp\WebApi\Controllers\FilmsController.cs:line 32
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+ClientConnectionId:919be0d6-9660-4c88-b8ba-747d59413191
+Error Number:207,State:1,Class:16
+2024-08-11 12:44:48.0446 INFO {"ModelName":"OnActionExecuting","Controller":"Films","Action":"CreateOneFilm","Id":null,"CreateAt":"2024-08-11T09:44:48.0444503Z"}
+2024-08-11 12:49:32.6158 INFO {"ModelName":"OnActionExecuting","Controller":"Films","Action":"GetAllFilms","Id":null,"CreateAt":"2024-08-11T09:49:32.6051619Z"}
+2024-08-11 12:49:34.8135 ERROR Something went wrong: Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid column name 'FilmId'.
+Invalid column name 'Description'.
+Invalid column name 'DirectorId'.
+Invalid column name 'DirectorName'.
+Invalid column name 'Rate'.
+Invalid column name 'Time'.
+Invalid column name 'Title'.
+Invalid column name 'Year'.
+Invalid column name 'FilmId'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__211_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Repositories.EFCore.FilmRepository.GetAllFilmsAsync(FilmParameters filmParameters, Boolean trackChanges) in C:\Users\Murat Öztürk\source\repos\filmApp\Repositories\EFCore\FilmRepository.cs:line 24
+   at Services.FilmManager.GetAllFilmsAsync(FilmParameters filmParameters, Boolean trackChanges) in C:\Users\Murat Öztürk\source\repos\filmApp\Services\FilmManager.cs:line 46
+   at WebApi.Controllers.FilmsController.GetAllFilmsAsync(FilmParameters filmParameters) in C:\Users\Murat Öztürk\source\repos\filmApp\WebApi\Controllers\FilmsController.cs:line 32
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+ClientConnectionId:7b290b6a-8fe1-434d-861f-eb4510425c66
+Error Number:207,State:1,Class:16
+2024-08-11 12:57:51.5274 INFO {"ModelName":"OnActionExecuting","Controller":"Films","Action":"GetAllFilms","Id":null,"CreateAt":"2024-08-11T09:57:51.5096685Z"}
+2024-08-11 12:57:55.1521 ERROR Something went wrong: Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid column name 'FilmId'.
+Invalid column name 'Description'.
+Invalid column name 'DirectorId'.
+Invalid column name 'DirectorName'.
+Invalid column name 'Rate'.
+Invalid column name 'Time'.
+Invalid column name 'Title'.
+Invalid column name 'Year'.
+Invalid column name 'FilmId'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__211_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Repositories.EFCore.FilmRepository.GetAllFilmsAsync(FilmParameters filmParameters, Boolean trackChanges) in C:\Users\Murat Öztürk\source\repos\filmApp\Repositories\EFCore\FilmRepository.cs:line 24
+   at Services.FilmManager.GetAllFilmsAsync(FilmParameters filmParameters, Boolean trackChanges) in C:\Users\Murat Öztürk\source\repos\filmApp\Services\FilmManager.cs:line 46
+   at WebApi.Controllers.FilmsController.GetAllFilmsAsync(FilmParameters filmParameters) in C:\Users\Murat Öztürk\source\repos\filmApp\WebApi\Controllers\FilmsController.cs:line 32
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+ClientConnectionId:05a8f0e6-ffe4-4f6d-a523-38d33f937612
+Error Number:207,State:1,Class:16
+2024-08-11 13:00:38.8745 INFO {"ModelName":"OnActionExecuting","Controller":"Films","Action":"GetAllFilms","Id":null,"CreateAt":"2024-08-11T10:00:38.8605798Z"}
+2024-08-11 13:00:41.0388 ERROR Something went wrong: Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid column name 'FilmId'.
+Invalid column name 'Description'.
+Invalid column name 'DirectorId'.
+Invalid column name 'DirectorName'.
+Invalid column name 'Rate'.
+Invalid column name 'Time'.
+Invalid column name 'Title'.
+Invalid column name 'Year'.
+Invalid column name 'FilmId'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__211_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Repositories.EFCore.FilmRepository.GetAllFilmsAsync(FilmParameters filmParameters, Boolean trackChanges) in C:\Users\Murat Öztürk\source\repos\filmApp\Repositories\EFCore\FilmRepository.cs:line 24
+   at Services.FilmManager.GetAllFilmsAsync(FilmParameters filmParameters, Boolean trackChanges) in C:\Users\Murat Öztürk\source\repos\filmApp\Services\FilmManager.cs:line 46
+   at WebApi.Controllers.FilmsController.GetAllFilmsAsync(FilmParameters filmParameters) in C:\Users\Murat Öztürk\source\repos\filmApp\WebApi\Controllers\FilmsController.cs:line 32
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+ClientConnectionId:71e02ba3-eccf-4ae3-a621-4b22e309746c
+Error Number:207,State:1,Class:16
+2024-08-11 13:38:44.0797 INFO {"ModelName":"OnActionExecuting","Controller":"Films","Action":"GetAllFilms","Id":null,"CreateAt":"2024-08-11T10:38:44.0636107Z"}
+2024-08-11 13:38:46.4617 ERROR Something went wrong: Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid column name 'FilmId'.
+Invalid column name 'Description'.
+Invalid column name 'DirectorId'.
+Invalid column name 'DirectorName'.
+Invalid column name 'Rate'.
+Invalid column name 'Time'.
+Invalid column name 'Title'.
+Invalid column name 'Year'.
+Invalid column name 'FilmId'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__211_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Repositories.EFCore.FilmRepository.GetAllFilmsAsync(FilmParameters filmParameters, Boolean trackChanges) in C:\Users\Murat Öztürk\source\repos\filmApp\Repositories\EFCore\FilmRepository.cs:line 24
+   at Services.FilmManager.GetAllFilmsAsync(FilmParameters filmParameters, Boolean trackChanges) in C:\Users\Murat Öztürk\source\repos\filmApp\Services\FilmManager.cs:line 46
+   at WebApi.Controllers.FilmsController.GetAllFilmsAsync(FilmParameters filmParameters) in C:\Users\Murat Öztürk\source\repos\filmApp\WebApi\Controllers\FilmsController.cs:line 32
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+ClientConnectionId:f647880e-670e-49bb-94c2-01cb8b66d215
+Error Number:207,State:1,Class:16
+2024-08-11 13:42:09.9434 INFO {"ModelName":"OnActionExecuting","Controller":"Films","Action":"GetAllFilms","Id":null,"CreateAt":"2024-08-11T10:42:09.9258361Z"}
+2024-08-11 13:42:19.6879 INFO {"ModelName":"OnActionExecuting","Controller":"Films","Action":"GetAllFilms","Id":null,"CreateAt":"2024-08-11T10:42:19.6878067Z"}
+2024-08-11 13:42:39.4020 INFO {"ModelName":"OnActionExecuting","Controller":"Films","Action":"GetFilmById","Id":"1","CreateAt":"2024-08-11T10:42:39.4018163Z"}
+2024-08-11 13:42:46.5224 INFO {"ModelName":"OnActionExecuting","Controller":"Films","Action":"DeleteOneFilm","Id":"3","CreateAt":"2024-08-11T10:42:46.5223212Z"}
+2024-08-11 13:42:52.3774 INFO {"ModelName":"OnActionExecuting","Controller":"Films","Action":"GetFilmById","Id":"3","CreateAt":"2024-08-11T10:42:52.3773635Z"}
+2024-08-11 13:42:52.5895 ERROR Something went wrong: Entities.Exceptions.FilmNotFoundException: The Film with id : 3 could not found.
+   at Services.FilmManager.GetFilmByIdAndCheckExists(Int32 id, Boolean trackChanges) in C:\Users\Murat Öztürk\source\repos\filmApp\Services\FilmManager.cs:line 85
+   at Services.FilmManager.GetFilmByIdAsync(Int32 id, Boolean trackChanges) in C:\Users\Murat Öztürk\source\repos\filmApp\Services\FilmManager.cs:line 53
+   at WebApi.Controllers.FilmsController.GetFilmByIdAsync(Int32 id) in C:\Users\Murat Öztürk\source\repos\filmApp\WebApi\Controllers\FilmsController.cs:line 41
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2024-08-11 13:42:59.3269 INFO {"ModelName":"OnActionExecuting","Controller":"Films","Action":"CreateOneFilm","Id":null,"CreateAt":"2024-08-11T10:42:59.3268933Z"}
+2024-08-11 13:43:48.9116 INFO {"ModelName":"OnActionExecuting","Controller":"Films","Action":"CreateOneFilm","Id":null,"CreateAt":"2024-08-11T10:43:48.9115299Z"}
+2024-08-11 13:48:59.2217 INFO {"ModelName":"OnActionExecuting","Controller":"Films","Action":"PartiallyUpdateOneFilm","Id":"1","CreateAt":"2024-08-11T10:48:59.2032084Z"}
+2024-08-11 13:49:57.8490 INFO {"ModelName":"OnActionExecuting","Controller":"Films","Action":"UpdateOneFilm","Id":"2","CreateAt":"2024-08-11T10:49:57.848999Z"}
+2024-08-11 14:10:11.0515 INFO {"ModelName":"OnActionExecuting","Controller":"Films","Action":"CreateOneFilm","Id":null,"CreateAt":"2024-08-11T11:10:11.0338577Z"}
+2024-08-11 14:11:26.5202 INFO {"ModelName":"OnActionExecuting","Controller":"Films","Action":"CreateOneFilm","Id":null,"CreateAt":"2024-08-11T11:11:26.5026115Z"}
+2024-08-11 14:11:32.1616 INFO {"ModelName":"OnActionExecuting","Controller":"Films","Action":"GetAllFilms","Id":null,"CreateAt":"2024-08-11T11:11:32.1615542Z"}
+2024-08-11 14:12:15.2142 INFO {"ModelName":"OnActionExecuting","Controller":"Films","Action":"CreateOneFilm","Id":null,"CreateAt":"2024-08-11T11:12:15.2141483Z"}
+2024-08-11 14:12:27.5284 INFO {"ModelName":"OnActionExecuting","Controller":"Films","Action":"GetAllFilms","Id":null,"CreateAt":"2024-08-11T11:12:27.5283636Z"}
+2024-08-11 14:13:13.4160 INFO {"ModelName":"OnActionExecuting","Controller":"Films","Action":"CreateOneFilm","Id":null,"CreateAt":"2024-08-11T11:13:13.4160356Z"}
+2024-08-11 14:13:15.1045 INFO {"ModelName":"OnActionExecuting","Controller":"Films","Action":"CreateOneFilm","Id":null,"CreateAt":"2024-08-11T11:13:15.1044838Z"}
+2024-08-11 14:13:16.2215 INFO {"ModelName":"OnActionExecuting","Controller":"Films","Action":"CreateOneFilm","Id":null,"CreateAt":"2024-08-11T11:13:16.2214376Z"}
+2024-08-11 14:13:17.3390 INFO {"ModelName":"OnActionExecuting","Controller":"Films","Action":"CreateOneFilm","Id":null,"CreateAt":"2024-08-11T11:13:17.3389671Z"}
+2024-08-11 14:13:18.7622 INFO {"ModelName":"OnActionExecuting","Controller":"Films","Action":"CreateOneFilm","Id":null,"CreateAt":"2024-08-11T11:13:18.7621293Z"}
+2024-08-11 14:13:19.8964 INFO {"ModelName":"OnActionExecuting","Controller":"Films","Action":"CreateOneFilm","Id":null,"CreateAt":"2024-08-11T11:13:19.8964219Z"}
+2024-08-11 14:13:21.0385 INFO {"ModelName":"OnActionExecuting","Controller":"Films","Action":"CreateOneFilm","Id":null,"CreateAt":"2024-08-11T11:13:21.0384284Z"}
+2024-08-11 14:13:22.0073 INFO {"ModelName":"OnActionExecuting","Controller":"Films","Action":"CreateOneFilm","Id":null,"CreateAt":"2024-08-11T11:13:22.0072569Z"}
+2024-08-11 14:13:23.2058 INFO {"ModelName":"OnActionExecuting","Controller":"Films","Action":"CreateOneFilm","Id":null,"CreateAt":"2024-08-11T11:13:23.2057841Z"}
+2024-08-11 14:13:32.9828 INFO {"ModelName":"OnActionExecuting","Controller":"Films","Action":"CreateOneFilm","Id":null,"CreateAt":"2024-08-11T11:13:32.9827696Z"}
+2024-08-11 14:13:34.4571 INFO {"ModelName":"OnActionExecuting","Controller":"Films","Action":"CreateOneFilm","Id":null,"CreateAt":"2024-08-11T11:13:34.4570231Z"}
+2024-08-11 14:13:54.3212 INFO {"ModelName":"OnActionExecuting","Controller":"Films","Action":"PartiallyUpdateOneFilm","Id":"1","CreateAt":"2024-08-11T11:13:54.3208009Z"}
+2024-08-11 14:13:59.2056 INFO {"ModelName":"OnActionExecuting","Controller":"Films","Action":"GetAllFilms","Id":null,"CreateAt":"2024-08-11T11:13:59.2056084Z"}
+2024-08-11 14:14:15.0302 INFO {"ModelName":"OnActionExecuting","Controller":"Films","Action":"UpdateOneFilm","Id":"2","CreateAt":"2024-08-11T11:14:15.030117Z"}
+2024-08-11 14:14:49.1343 INFO {"ModelName":"OnActionExecuting","Controller":"Films","Action":"UpdateOneFilm","Id":"2","CreateAt":"2024-08-11T11:14:49.133218Z"}
+2024-08-11 14:14:52.8895 INFO {"ModelName":"OnActionExecuting","Controller":"Films","Action":"GetAllFilms","Id":null,"CreateAt":"2024-08-11T11:14:52.8894815Z"}
+2024-08-11 17:34:31.8241 INFO {"ModelName":"OnActionExecuting","Controller":"Films","Action":"CreateOneFilm","Id":null,"CreateAt":"2024-08-11T14:34:31.813408Z"}
+2024-08-11 17:34:34.8791 INFO {"ModelName":"OnActionExecuting","Controller":"Films","Action":"CreateOneFilm","Id":null,"CreateAt":"2024-08-11T14:34:34.8790439Z"}
+2024-08-11 17:34:35.0669 INFO {"ModelName":"OnActionExecuting","Controller":"Films","Action":"CreateOneFilm","Id":null,"CreateAt":"2024-08-11T14:34:35.0669273Z"}
+2024-08-11 17:34:35.1706 INFO {"ModelName":"OnActionExecuting","Controller":"Films","Action":"CreateOneFilm","Id":null,"CreateAt":"2024-08-11T14:34:35.1705787Z"}
+2024-08-11 17:34:35.2800 INFO {"ModelName":"OnActionExecuting","Controller":"Films","Action":"CreateOneFilm","Id":null,"CreateAt":"2024-08-11T14:34:35.2799559Z"}
+2024-08-11 17:34:35.3744 INFO {"ModelName":"OnActionExecuting","Controller":"Films","Action":"CreateOneFilm","Id":null,"CreateAt":"2024-08-11T14:34:35.3743275Z"}
+2024-08-11 17:34:35.4823 INFO {"ModelName":"OnActionExecuting","Controller":"Films","Action":"CreateOneFilm","Id":null,"CreateAt":"2024-08-11T14:34:35.4822693Z"}
+2024-08-11 17:34:35.5909 INFO {"ModelName":"OnActionExecuting","Controller":"Films","Action":"CreateOneFilm","Id":null,"CreateAt":"2024-08-11T14:34:35.5909159Z"}
+2024-08-11 17:34:35.6535 INFO {"ModelName":"OnActionExecuting","Controller":"Films","Action":"CreateOneFilm","Id":null,"CreateAt":"2024-08-11T14:34:35.6534562Z"}
+2024-08-11 17:34:35.7469 INFO {"ModelName":"OnActionExecuting","Controller":"Films","Action":"CreateOneFilm","Id":null,"CreateAt":"2024-08-11T14:34:35.7469285Z"}
+2024-08-11 17:34:35.8404 INFO {"ModelName":"OnActionExecuting","Controller":"Films","Action":"CreateOneFilm","Id":null,"CreateAt":"2024-08-11T14:34:35.8403439Z"}
+2024-08-11 17:34:35.9168 INFO {"ModelName":"OnActionExecuting","Controller":"Films","Action":"CreateOneFilm","Id":null,"CreateAt":"2024-08-11T14:34:35.9168094Z"}
+2024-08-11 17:34:36.0088 INFO {"ModelName":"OnActionExecuting","Controller":"Films","Action":"CreateOneFilm","Id":null,"CreateAt":"2024-08-11T14:34:36.0088016Z"}
+2024-08-11 17:34:36.0860 INFO {"ModelName":"OnActionExecuting","Controller":"Films","Action":"CreateOneFilm","Id":null,"CreateAt":"2024-08-11T14:34:36.0859538Z"}
+2024-08-11 17:34:36.1799 INFO {"ModelName":"OnActionExecuting","Controller":"Films","Action":"CreateOneFilm","Id":null,"CreateAt":"2024-08-11T14:34:36.1798974Z"}
+2024-08-11 17:34:36.2562 INFO {"ModelName":"OnActionExecuting","Controller":"Films","Action":"CreateOneFilm","Id":null,"CreateAt":"2024-08-11T14:34:36.2562415Z"}
+2024-08-11 17:34:36.3354 INFO {"ModelName":"OnActionExecuting","Controller":"Films","Action":"CreateOneFilm","Id":null,"CreateAt":"2024-08-11T14:34:36.3353998Z"}
+2024-08-11 17:34:36.4268 INFO {"ModelName":"OnActionExecuting","Controller":"Films","Action":"CreateOneFilm","Id":null,"CreateAt":"2024-08-11T14:34:36.4267848Z"}
+2024-08-11 17:34:36.4897 INFO {"ModelName":"OnActionExecuting","Controller":"Films","Action":"CreateOneFilm","Id":null,"CreateAt":"2024-08-11T14:34:36.4897066Z"}
+2024-08-11 17:34:36.5635 INFO {"ModelName":"OnActionExecuting","Controller":"Films","Action":"CreateOneFilm","Id":null,"CreateAt":"2024-08-11T14:34:36.5634504Z"}
+2024-08-11 17:34:36.6569 INFO {"ModelName":"OnActionExecuting","Controller":"Films","Action":"CreateOneFilm","Id":null,"CreateAt":"2024-08-11T14:34:36.6568631Z"}
+2024-08-11 17:34:36.7338 INFO {"ModelName":"OnActionExecuting","Controller":"Films","Action":"CreateOneFilm","Id":null,"CreateAt":"2024-08-11T14:34:36.733832Z"}
+2024-08-11 17:34:36.8071 INFO {"ModelName":"OnActionExecuting","Controller":"Films","Action":"CreateOneFilm","Id":null,"CreateAt":"2024-08-11T14:34:36.8070879Z"}
+2024-08-11 17:34:36.8866 INFO {"ModelName":"OnActionExecuting","Controller":"Films","Action":"CreateOneFilm","Id":null,"CreateAt":"2024-08-11T14:34:36.8865861Z"}
+2024-08-11 17:34:36.9612 INFO {"ModelName":"OnActionExecuting","Controller":"Films","Action":"CreateOneFilm","Id":null,"CreateAt":"2024-08-11T14:34:36.9611689Z"}
+2024-08-11 17:34:37.0310 INFO {"ModelName":"OnActionExecuting","Controller":"Films","Action":"CreateOneFilm","Id":null,"CreateAt":"2024-08-11T14:34:37.0309786Z"}
+2024-08-11 17:34:37.0574 INFO {"ModelName":"OnActionExecuting","Controller":"Films","Action":"CreateOneFilm","Id":null,"CreateAt":"2024-08-11T14:34:37.0573721Z"}
+2024-08-11 17:34:37.1505 INFO {"ModelName":"OnActionExecuting","Controller":"Films","Action":"CreateOneFilm","Id":null,"CreateAt":"2024-08-11T14:34:37.150474Z"}
+2024-08-11 17:34:37.2249 INFO {"ModelName":"OnActionExecuting","Controller":"Films","Action":"CreateOneFilm","Id":null,"CreateAt":"2024-08-11T14:34:37.2248736Z"}
+2024-08-11 17:34:37.3031 INFO {"ModelName":"OnActionExecuting","Controller":"Films","Action":"CreateOneFilm","Id":null,"CreateAt":"2024-08-11T14:34:37.3028829Z"}
+2024-08-11 17:34:37.3959 INFO {"ModelName":"OnActionExecuting","Controller":"Films","Action":"CreateOneFilm","Id":null,"CreateAt":"2024-08-11T14:34:37.3959403Z"}
+2024-08-11 17:34:37.4713 INFO {"ModelName":"OnActionExecuting","Controller":"Films","Action":"CreateOneFilm","Id":null,"CreateAt":"2024-08-11T14:34:37.4713039Z"}
+2024-08-11 17:34:37.5639 INFO {"ModelName":"OnActionExecuting","Controller":"Films","Action":"CreateOneFilm","Id":null,"CreateAt":"2024-08-11T14:34:37.5639596Z"}
+2024-08-11 17:34:37.6566 INFO {"ModelName":"OnActionExecuting","Controller":"Films","Action":"CreateOneFilm","Id":null,"CreateAt":"2024-08-11T14:34:37.6566478Z"}
+2024-08-11 17:34:37.7189 INFO {"ModelName":"OnActionExecuting","Controller":"Films","Action":"CreateOneFilm","Id":null,"CreateAt":"2024-08-11T14:34:37.7189198Z"}
+2024-08-11 17:34:37.8139 INFO {"ModelName":"OnActionExecuting","Controller":"Films","Action":"CreateOneFilm","Id":null,"CreateAt":"2024-08-11T14:34:37.8139219Z"}
+2024-08-11 17:34:37.9065 INFO {"ModelName":"OnActionExecuting","Controller":"Films","Action":"CreateOneFilm","Id":null,"CreateAt":"2024-08-11T14:34:37.9064854Z"}
+2024-08-11 17:34:37.9851 INFO {"ModelName":"OnActionExecuting","Controller":"Films","Action":"CreateOneFilm","Id":null,"CreateAt":"2024-08-11T14:34:37.9851208Z"}
+2024-08-11 17:34:38.0471 INFO {"ModelName":"OnActionExecuting","Controller":"Films","Action":"CreateOneFilm","Id":null,"CreateAt":"2024-08-11T14:34:38.0470988Z"}
+2024-08-11 17:34:38.1245 INFO {"ModelName":"OnActionExecuting","Controller":"Films","Action":"CreateOneFilm","Id":null,"CreateAt":"2024-08-11T14:34:38.1245044Z"}
+2024-08-11 17:34:38.1861 INFO {"ModelName":"OnActionExecuting","Controller":"Films","Action":"CreateOneFilm","Id":null,"CreateAt":"2024-08-11T14:34:38.1861502Z"}
+2024-08-11 17:34:38.2500 INFO {"ModelName":"OnActionExecuting","Controller":"Films","Action":"CreateOneFilm","Id":null,"CreateAt":"2024-08-11T14:34:38.2500501Z"}
+2024-08-11 17:34:38.3266 INFO {"ModelName":"OnActionExecuting","Controller":"Films","Action":"CreateOneFilm","Id":null,"CreateAt":"2024-08-11T14:34:38.3266392Z"}
+2024-08-11 17:34:38.3733 INFO {"ModelName":"OnActionExecuting","Controller":"Films","Action":"CreateOneFilm","Id":null,"CreateAt":"2024-08-11T14:34:38.3732659Z"}
+2024-08-11 17:34:38.4635 INFO {"ModelName":"OnActionExecuting","Controller":"Films","Action":"CreateOneFilm","Id":null,"CreateAt":"2024-08-11T14:34:38.4635224Z"}
+2024-08-11 17:34:38.5262 INFO {"ModelName":"OnActionExecuting","Controller":"Films","Action":"CreateOneFilm","Id":null,"CreateAt":"2024-08-11T14:34:38.5262086Z"}
+2024-08-11 17:34:38.6020 INFO {"ModelName":"OnActionExecuting","Controller":"Films","Action":"CreateOneFilm","Id":null,"CreateAt":"2024-08-11T14:34:38.6019859Z"}
+2024-08-11 17:34:38.6647 INFO {"ModelName":"OnActionExecuting","Controller":"Films","Action":"CreateOneFilm","Id":null,"CreateAt":"2024-08-11T14:34:38.6646744Z"}
+2024-08-11 17:34:38.7270 INFO {"ModelName":"OnActionExecuting","Controller":"Films","Action":"CreateOneFilm","Id":null,"CreateAt":"2024-08-11T14:34:38.7270018Z"}
+2024-08-11 17:34:38.7739 INFO {"ModelName":"OnActionExecuting","Controller":"Films","Action":"CreateOneFilm","Id":null,"CreateAt":"2024-08-11T14:34:38.7739495Z"}
+2024-08-11 17:34:45.0695 INFO {"ModelName":"OnActionExecuting","Controller":"Films","Action":"GetAllFilms","Id":null,"CreateAt":"2024-08-11T14:34:45.0695105Z"}
+2024-08-11 17:34:54.6210 INFO {"ModelName":"OnActionExecuting","Controller":"Films","Action":"GetAllFilms","Id":null,"CreateAt":"2024-08-11T14:34:54.6210263Z"}
+2024-08-11 17:35:04.3940 INFO {"ModelName":"OnActionExecuting","Controller":"Films","Action":"GetAllFilms","Id":null,"CreateAt":"2024-08-11T14:35:04.3940052Z"}
+2024-08-11 17:35:52.8412 INFO {"ModelName":"OnActionExecuting","Controller":"Films","Action":"GetAllFilms","Id":null,"CreateAt":"2024-08-11T14:35:52.841278Z"}
+2024-08-11 17:35:58.1520 INFO {"ModelName":"OnActionExecuting","Controller":"Films","Action":"GetAllFilms","Id":null,"CreateAt":"2024-08-11T14:35:58.1520277Z"}
+2024-08-11 17:36:07.7159 INFO {"ModelName":"OnActionExecuting","Controller":"Films","Action":"GetAllFilms","Id":null,"CreateAt":"2024-08-11T14:36:07.7158995Z"}
+2024-08-11 17:36:15.5347 INFO {"ModelName":"OnActionExecuting","Controller":"Films","Action":"GetAllFilms","Id":null,"CreateAt":"2024-08-11T14:36:15.5347646Z"}
+2024-08-11 17:36:21.9392 INFO {"ModelName":"OnActionExecuting","Controller":"Films","Action":"GetAllFilms","Id":null,"CreateAt":"2024-08-11T14:36:21.9391954Z"}
+2024-08-11 17:36:26.7090 INFO {"ModelName":"OnActionExecuting","Controller":"Films","Action":"GetAllFilms","Id":null,"CreateAt":"2024-08-11T14:36:26.7090495Z"}
+2024-08-11 17:36:29.5757 INFO {"ModelName":"OnActionExecuting","Controller":"Films","Action":"GetAllFilms","Id":null,"CreateAt":"2024-08-11T14:36:29.5756816Z"}
